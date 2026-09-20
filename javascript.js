@@ -36,6 +36,7 @@ console.log("\n--- 3. Cart Total ---");
 console.log(`All items: [${itemPrices.join(", ")}]`);
 console.log(`Cart Total: ${cartTotal} THB`);
 
+function calculateDiscount(amount, percentage) {
   const discountAmount = (amount * percentage) / 100;
   const finalPrice = amount - discountAmount;
   return {
